@@ -1,0 +1,162 @@
+/* Task 1 */
+@font-face {
+    font-family: Montserrat;
+    src: url("assets/montserrat-400.ttf");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("assets/montserrat-500.ttf");
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("assets/montserrat-600.ttf");
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("assets/montserrat-700.ttf");
+    font-weight: 700;
+    font-display: swap;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    color: #16302B;
+    background: #E6EFEC;
+}
+
+.form-card {
+    max-width: 54rem;
+    background: white;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem #16302b20;
+}
+
+h1 {
+    margin: 0;
+    padding: 1.5rem;
+    background: #0F6B5F;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.form-control, .form-select {
+    background-color: #F4F7F5;
+    border-color: #E6EFEC;
+    border-radius: .65rem;
+}
+
+.form-label, legend {
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.form-floating > label {
+    font-weight: 400;
+}
+
+.form-check-input:checked, .input-group-text {
+    background-color: #0F6B5F;
+    border-color: #0F6B5F;
+}
+
+.input-group-text {
+    color: white;
+}
+
+.btn {
+    border-radius: 2rem;
+    padding: .6rem 1.5rem;
+    font-weight: 600;
+}
+
+.btn-find {
+    background: #F2A93B;
+    color: #16302B;
+}
+
+.btn-find:hover {
+    background: #e59a2b;
+}
+
+.btn-clear {
+    border: 1px solid #16302B;
+}
+
+.btn-clear:hover {
+    background: #E6EFEC;
+}
+
+.trip-type .btn {
+    border: 1px solid #0F6B5F;
+    color: #0F6B5F;
+}
+
+.trip-type .btn-check:checked + .btn {
+    background: #0F6B5F;
+    color: white;
+}
+
+.form-control:focus, .form-select:focus, .form-check-input:focus {
+    border-color: #0F6B5F;
+    box-shadow: 0 0 0 .2rem #0f6b5f30;
+}
+
+a {
+    color: #0F6B5F;
+}
+
+.task-navigation .btn {
+    background: white;
+    padding: .55rem 1rem;
+}
+
+.task-navigation [aria-current="page"] {
+    background: #0F6B5F;
+    border-color: #0F6B5F;
+    color: white;
+}
+
+:focus-visible {
+    outline: 3px solid #0F6B5F;
+    outline-offset: 3px;
+}
+
+@media (max-width: 767.98px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .actions {
+        flex-direction: column-reverse;
+    }
+}
+
+/* Task 2 */
+.validation-form :user-invalid {
+    border-color: #b02a37;
+}
+
+.validation-form :user-valid {
+    border-color: #0F6B5F;
+}
+
+.validation-form :user-invalid ~ .invalid-feedback,
+.validation-form fieldset:has(input:user-invalid) > .invalid-feedback {
+    display: block;
+}
+
+/* Task 3 */
+textarea {
+    resize: vertical;
+}
